@@ -1,9 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const { report } = require('../../config/server');
 const connection = require('../../config/db');
 const bcryptjs = require('bcrypt');
-const session = require('express-session');
+
 
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;

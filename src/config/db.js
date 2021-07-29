@@ -1,5 +1,4 @@
 const mysql = require('mysql')
-const app = require('../config/server')
 
 
 const conexion = mysql.createConnection({
@@ -8,6 +7,7 @@ const conexion = mysql.createConnection({
     password:'',
     database: 'afiliados',
 })
+
 
 conexion.connect((error) => {
     if (error) {

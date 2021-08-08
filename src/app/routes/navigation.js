@@ -6,7 +6,6 @@ const bcryptjs = require('bcrypt');
 
 router.post('/login', async (req, res) => {
     const { username, password } = req.body;
-
     if (username && password) {
         connection.query('SELECT * FROM usuarios WHERE username = ?', [username], async (err, result) => {
             if (result.length === 0 || !(await bcryptjs.compare(password, result[0].password))) {
@@ -29,7 +28,7 @@ router.post('/login', async (req, res) => {
                     alertIcon: 'success',
                     showConfirmButton: false,
                     timer: 4000,
-                    ruta: 'crud'
+                    ruta: 'crud',
                 })
             }
         })

@@ -61,8 +61,8 @@
                                 <div class="line"></div>
                             </div>
                             <div class="form-floating mb-3">
-                                <input type="text" name="username" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                <label for="floatingInput">Email address</label>
+                                <input type="text" name="username" class="form-control" id="username" placeholder="name@example.com">
+                                <label for="floatingInput">Username</label>
                               </div>
                               <div class="form-floating">
                                 <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password">
@@ -70,8 +70,7 @@
                               </div>
                             <div class="row px-3 mb-4">
                             </div>
-                            <div class="row mb-3 px-3"> <button type="submit"
-                                    class="btn btn-primary text-center">Login</button>
+                            <div class="row mb-3 px-3"> <button type="submit" id="boton" class="btn btn-primary text-center">Login</button>
                             </div>
                         </div>
                     </div>
@@ -88,6 +87,8 @@
         </div>
     </form>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="/resources/assets/js/comprobacion.js"></script>
+
 
     <% if(typeof alert != "undefined" ) {%>
         <script>

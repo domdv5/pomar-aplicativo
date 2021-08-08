@@ -21,7 +21,7 @@ app.use(express.json());
 
 
 //configuracion dotenv para variables de entorno
-dotenv.config({ path: path.join(__dirname, '../env/.env') });
+dotenv.config({ path: path.join(__dirname, '../../env/.env') });
 
 //configurar la ruta donde estan alojados los elementos del css (public)
 app.use('/resources', express.static(path.join(__dirname, '../public')));

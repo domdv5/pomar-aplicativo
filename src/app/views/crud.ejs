@@ -69,13 +69,13 @@
     <div class="d-flex flex-row bd-highlight mb-3">
       <div class="p-2 bd-highlight">
         <div class="container-fluid justify-content-start">
-          <a class="btn btn-sm btn-outline-primary" href="/logout">Cerrar sesion</a>
+          <a class="btn btn-sm btn-outline-danger" title="Cerrar Sesion" href="/logout"><i class="fas fa-sign-out-alt"></i></a>
         </div>
       </div>
       <div class="p-2 bd-highlight">
         <form class="container-fluid justify-content-start">
           <button class="btn btn-sm btn-outline-primary" type="button" data-bs-toggle="modal"
-            data-bs-target="#exampleModal" data-bs-whatever="@fat">Añadir nuevo usuario</button>
+            data-bs-target="#exampleModal"  title="Anadir Usuario" data-bs-whatever="@fat"><i class="fas fa-user-plus"></i></button>
         </form>
       </div>
 
@@ -143,47 +143,47 @@
 
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Primer Nombre</label>
-              <input class="form-control" id="message-text" type="text" name="primer_nombre">
+              <input class="form-control" type="text" name="primer_nombre">
             </div>
 
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Segundo Nombre</label>
-              <input class="form-control" id="message-text" type="text" name="segundo_nombre">
+              <input class="form-control" type="text" name="segundo_nombre">
             </div>
 
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Primer Apellido</label>
-              <input class="form-control" id="message-text" type="text" name="primer_apellido">
+              <input class="form-control" type="text" name="primer_apellido">
             </div>
 
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Segundo Apellido</label>
-              <input class="form-control" id="message-text" type="text" name="segundo_apellido">
+              <input class="form-control" type="text" name="segundo_apellido">
             </div>
 
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Direccion</label>
-              <input class="form-control" id="message-text" type="text" name="direccion">
+              <input class="form-control" type="text" name="direccion">
             </div>
 
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Telefono</label>
-              <input class="form-control" id="message-text" type="tel" name="telefono">
+              <input class="form-control" type="tel" name="telefono">
             </div>
 
             <div class="mb-3">
               <label for="message-text" class="col-form-label">Celular</label>
-              <input class="form-control" id="message-text" type="tel" name="celular">
+              <input class="form-control" type="tel" name="celular">
             </div>
 
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="observaciones"></textarea>
+              <textarea class="form-control" rows="3" name="observaciones"></textarea>
             </div>
 
             <div class="input-group mb-3">
               <label class="input-group-text" for="inputGroupSelect01">Comite</label>
-              <select class="form-select" id="inputGroupSelect01" name="id_comite">
+              <select class="form-select"  name="id_comite">
                 <option selected value=1>Empresarial</option>
                 <option value=2>Deportes</option>
                 <option value=3>Mujer</option>
@@ -266,13 +266,13 @@
                     <div class="p-2 bd-highlight">
                       <div class="d-flex justify-content-end">
 
-                        <button type="button" class="btn btn-primary m-1"
+                        <button type="button" class="btn btn-outline-primary m-1" title="Editar Usuario"
                           style="display: flex;align-items: center;justify-content: center;" data-bs-toggle="modal"
                           data-bs-target="#exampleModal<%= data[i].id_users%>">
                           <span class="material-icons">edit</span>
                         </button>
 
-                        <button type="button" class="btn btn-danger m-1"
+                        <button type="button" class="btn btn-outline-danger m-1" title="Eliminar Usario"
                           style="display: flex;align-items: center;justify-content: center;" data-bs-toggle="modal"
                           data-bs-target="#modalEliminar<%= data[i].id_users%>">
                           <span class="material-icons">delete_forever</span>
@@ -330,61 +330,61 @@
               <form method="post" action="/edit/<%=data[i].id_users%>">
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">id</label>
-                  <input class="form-control" id="message-text" type="text" name="id_users" 
+                  <input class="form-control" type="text" name="id_users" 
                   value="<%= data[i].id_users %>">
                 </div>
 
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Primer Nombre</label>
-                  <input class="form-control" id="message-text" type="text" name="primer_nombre"
+                  <input class="form-control" type="text" name="primer_nombre"
                     value="<%= data[i].primer_nombre %>">
                 </div>
 
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Segundo Nombre</label>
-                  <input class="form-control" id="message-text" type="text" name="segundo_nombre"
+                  <input class="form-control" type="text" name="segundo_nombre"
                     value="<%= data[i].segundo_nombre %>">
                 </div>
 
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Primer Apellido</label>
-                  <input class="form-control" id="message-text" type="text" name="primer_apellido"
+                  <input class="form-control" type="text" name="primer_apellido"
                     value="<%= data[i].primer_apellido %>">
                 </div>
 
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Segundo APellido</label>
-                  <input class="form-control" id="message-text" type="text" name="segundo_apellido"
+                  <input class="form-control" type="text" name="segundo_apellido"
                     value="<%= data[i].segundo_apellido %>">
                 </div>
 
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Direccion</label>
-                  <input class="form-control" id="message-text" type="text" name="direccion"
+                  <input class="form-control" type="text" name="direccion"
                     value="<%= data[i].direccion %>">
                 </div>
 
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Telofono</label>
-                  <input class="form-control" id="message-text" type="number" name="telefono"
+                  <input class="form-control" type="number" name="telefono"
                     value="<%= data[i].telefono%>">
                 </div>
 
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Celular</label>
                   <input class="form-control" type="number" name="celular" value="<%= data[i].celular %> "
-                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                   rows="3"></textarea>
                 </div>
 
                 <div class="mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
                   <input class="form-control" type="text" name="observaciones" value="<%= data[i].observaciones %> "
-                    id="exampleFormControlTextarea1" rows="3"></textarea>
+                   rows="3"></textarea>
                 </div>
 
                 <div class="input-group mb-3">
                   <label class="input-group-text" for="inputGroupSelect01">Comite</label>
-                  <select class="form-select" id="inputGroupSelect01" name="id_comite">
+                  <select class="form-select"  name="id_comite">
                     <option selected value=<%= data[i].id_comite %> >
                       <%= data[i].nombre%>
                     </option>
@@ -473,8 +473,7 @@
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
     <script src="/resources/js/script.js"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="/resources/assets/js/comprobacion"></script>
-
+    
 
     <% if(typeof alert !="undefined" ) {%>
       <script>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 27-07-2021 a las 03:55:46
+-- Tiempo de generación: 08-08-2021 a las 22:58:56
 -- Versión del servidor: 10.4.19-MariaDB
 -- Versión de PHP: 7.3.28
 
@@ -110,9 +110,7 @@ INSERT INTO `miembros` (`id_users`, `primer_nombre`, `segundo_nombre`, `primer_a
 (216, 'JHON', 'EDISON', 'GUZMAN', '', 'CR 41A  83 37', '', '3186891065', 'CONTINUA', 1),
 (494, 'MANUEL', '', 'ARENAS', '', 'CR 42 A  77 56', '', '', 'CONTINUA    ', 1),
 (556, 'PIEDAD ', '', 'ALZATE', '', 'CL 76  41A 48', '2336249', '', 'CONTINUA', 3),
-(605, 'ADRIANA', '', 'URIBE', '', 'CL 77  41 113', '2119097', '', 'CONTINUA', 3),
-(611, 'JORGE', '', 'CARMONA', '', 'CR 42  82 45', '5854946', '', 'CONTINUA', 2),
-(902, 'wqeqweqweqwsdsqwe', 'asdasdadasdas', 'fggfgf', 'sdfsd', 'CR 42 A  77 56', '1231231234', '', 'nula         ', 1);
+(605, 'ADRIANA', '', 'URIBE', '', 'CL 77  41 113', '2119097', '', 'CONTINUA', 3);
 
 -- --------------------------------------------------------
 
@@ -132,23 +130,8 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `username`, `fullname`, `password`) VALUES
-(45, 'p', 'pedro', '$2a$10$mExfXgho/rnaxhyeTBeQwuci76x3SIzV2TOWE0Cu6xMRq.5tUjv2y'),
-(46, 'p', 'pedro', '$2a$10$fn/SrRuJSRcfgdRVlV4Tmul640.FMnRBzzd3Vg7gmkPPtmm9jw6aa'),
-(47, 'p', 'd', '$2a$10$SlxfTUgBDrPYsoKoG0jr8us0w6PUseC.68wjpuf4EZ4/mdAMI19ey'),
-(48, 'p', 'x', '$2a$10$HaBbnkA8CLuT.bpLVUzUeeHFBFMknpcoRLkfSA9rvcMX8zH2riibq'), 
-(49, 'p', 'f', '$2a$10$lPCPqxwrbQFjSwhmlnbCjuluPmJojkja8I9UQcR8LSIuyIosPeQqO'),
-(50, 'p', 'dgfgd', '$2a$10$6YKffvCh57GY/WPk2uJ6q.tmWXwNU60lnAoplSNBNP3xYcihvKfuq'),
-(51, 'c', 'fdsfds', '$2a$10$aR.WNi3qnRL.FbjGWiU/quZW6ItlgppgHvTziEs2myCurNEYyvRBC'),
-(52, 'c', 'gdfgdf', '$2a$10$zN5RMbePmd0IX6kfX6fuDu.8mS.rIzRPfmNIXqQm5hwq.g81c9PjG'),
-(53, 'dom23', 'ffsyyh', '$2a$10$EUxLFgNBv86ICnjg2h2UJO1BOGwbGStDqyLxLLORbMWzy2CAcz9VS'),
 (54, 'qwer', 'felipe', '$2a$10$t45DtbJR4zVQJwg6oKVDkukWD4wcbhEmGGYNNsOaCv6JNZdsMrXFa'),
-(55, 'dom23', 'pedro', '$2a$10$i/IBIhGbSCZQTIV/j/Nu9Oi/LKwYpCQsdgECu16oZkBLeKO/jDY4e'),
-(56, 'dom', 'sdfdsfds', '$2a$10$crxcpm7ZPZ1CA.AG104aUepmlflCxuglz8/BGAyxLdEg9DpOqqLYy'),
-(57, 'dado', 'dios', '$2a$10$HGYltBeuTBcRRb92z.R2iO2TCvg/RCm1E7Ucz2YavYyYAYXAL2I/.'),
-(58, 'dado', 'dios', '$2a$10$34uVX2DR6dMzzacIEDvvROaA3mX1L15kPnmN3LO7.9M2etd1Tum2C'),
-(59, 'dado', 'dios', '$2a$10$JtV7ldwqDvA3jMLkW61ST./VATXlKrSS5dTlyzF/.zVtHITE4Iui.'),
-(60, 'fer', 'fercho', '$2a$10$b4zMzmbKK8duUEQKzvAsa.SykPhM6..ct1x5.dYpXn3n/CiEIxxXG'),
-(61, 'pitop', 'vvvvvvvv', '$2a$10$QW4H3wqNxyN8.9VToXVR1eAnWf9I58ZpzqUNvZzpRDSr9rd/D/xBG');
+(62, 'admin', 'walter', '$2a$10$mPOrMr.RXhDm9ptDBu/OyOwwWaXaKDyE4kg3h.nCzxHqQ6Ypw1cDW');
 
 --
 -- Índices para tablas volcadas
@@ -187,7 +170,7 @@ ALTER TABLE `comites`
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=62;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=63;
 
 --
 -- Restricciones para tablas volcadas
